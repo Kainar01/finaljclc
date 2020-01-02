@@ -12,6 +12,9 @@ import Contacts from '../Contacts/Contacts.js'
 const Home = ()=> {
     return (
         <div >
+            <div class="position-fixed  mt-5 form-success alert alert-success">
+  <strong>Заявка успешно оставлена!</strong> 
+</div>
             <div className="home d-flex  justify-content-center align-items-center" id="home">
             <Intro/>
             </div>

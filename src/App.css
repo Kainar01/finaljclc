@@ -525,10 +525,51 @@ body {
   padding-top: 20px;
 }
 
+#website {
+  display: none;
+}
+
+.contact-form {
+  -webkit-box-sizing: border-box !important;
+          box-sizing: border-box !important;
+}
+
+.contact-form label {
+  float: left;
+  width: 20%;
+}
+
+.contact-form input {
+  display: block;
+  width: 60%;
+}
+
+.form-success {
+  display: none;
+  -webkit-transition: 1s all ease !important;
+  transition: 1s all ease !important;
+  right: 10%;
+  text-align: center;
+  z-index: 1000;
+}
+
+.form-show {
+  display: block !important;
+  -webkit-transition: opacity 1s ease-out;
+  transition: opacity 1s ease-out;
+}
+
 @media screen and (max-height: 605px) and (orientation: landscape) {
   .jp-bg, .ch-bg {
     height: 70vh !important;
     width: 30vw !important;
+  }
+}
+
+@media screen and (max-height: 605px) and (orientation: portrait) {
+  .form-success {
+    width: 60%;
+    left: 20%;
   }
 }
 /*# sourceMappingURL=App.css.map */
