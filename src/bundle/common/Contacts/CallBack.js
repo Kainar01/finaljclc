@@ -8,6 +8,7 @@ class CallBack extends React.Component{
         this.state={value: ''}
         this.handleSubmit = this.handleSubmit.bind(this)
         this.handleClick = this.handleClick.bind(this)
+        this.handleChild = this.handleChild.bind(this)
     }
     handleClick(e){
         // const form = document.querySelector('form')
@@ -29,25 +30,28 @@ class CallBack extends React.Component{
                 except=el
             }
         })
-        console.log(body,except);
+
+        // console.log(body,except);
         
    
-        if(except){
-            except.classList.add('hide')
-        }
-        if(body){
-            body.classList.add('hide')
-        }
-        
-        if(except){
-        except.addEventListener("click", function (ev) {
+       
+        except.classList.add('hide')
+        body.classList.add('hide')
+        // e.stopPropagation();
+        // except.addEventListener("click", function (ev) {
            
-            ev.stopPropagation(); //this is important! If removed, you'll get both alerts
-        }, false);}
+        //     ev.stopPropagation(); //this is important! If removed, you'll get both alerts
+        // }, false);
         
         
         
+        console.log('parent');
         
+        
+    }
+    handleChild(e){
+        console.log('child');
+        e.stopPropagation()
         
     }
     handleSubmit(e){
@@ -76,7 +80,7 @@ class CallBack extends React.Component{
         return (
 
             <div onClick={this.handleClick} id="contact-container" class="contact-container hide">
-             <form onSubmit={this.handleSubmit} id="contact-form" method="POST" action="send.php" className="contact-form jp-form hide">
+             <form onClick={this.handleChild} onSubmit={this.handleSubmit} id="contact-form" method="POST" action="send.php" className="contact-form jp-form hide">
                 <h5 className="text-center p-3 mb-2 mt-2 w-75 ml-auto mr-auto">Оставьте заявку на пробный урок!</h5>
                 <input type="text" name="myName" placeholder="Ваше имя..." className="form-control " required/>
                 
@@ -97,7 +101,7 @@ class CallBack extends React.Component{
                 <input type="hidden" name="action" value="Japanese"/>
                 <button type="submit" name="btn" value="Send" className="contact btn btn-primary m-4" >Оставить заявку </button>
             </form>
-            <form onSubmit={this.handleSubmit} id="contact-form" method="POST" action="send.php" className="contact-form just-form hide">
+            <form onClick={this.handleChild} onSubmit={this.handleSubmit} id="contact-form" method="POST" action="send.php" className="contact-form just-form hide">
                 <h5 className="text-center p-3 mb-2 mt-2 w-75 ml-auto mr-auto">Оставьте заявку на пробный урок!</h5>
                 <input type="text" name="myName" placeholder="Ваше имя..." className="form-control " required/>
                 
@@ -120,7 +124,7 @@ class CallBack extends React.Component{
                 <button type="submit" name="btn" value="Send" className="contact btn btn-primary m-4" >Оставить заявку </button>
             </form>
             
-            <form onSubmit={this.handleSubmit} id="contact-form" method="POST" action="send.php" className="contact-form ch-form hide">
+            <form onClick={this.handleChild} onSubmit={this.handleSubmit} id="contact-form" method="POST" action="send.php" className="contact-form ch-form hide">
                 <h5 className="text-center p-3 mb-2 mt-2 w-75 ml-auto mr-auto">Оставьте заявку на пробный урок!</h5>
                 <input type="text" name="myName" placeholder="Ваше имя..." className="form-control " required/>
                 

@@ -55,7 +55,7 @@ class About extends React.Component  {
             
                 </div>
                 
-                <button onClick={this.handleClick} className="jp-btn btn btn-primary m-5">Enroll</button>
+                <button onClick={this.handleClick} className="jp-btn btn btn-primary m-3">Enroll</button>
             <JpSlider />
             </div>
             <div className='jp' id = "ch">
@@ -68,7 +68,7 @@ class About extends React.Component  {
                     </p>
             
                 </div>
-                <button onClick={this.handleClick} className="ch-btn btn btn-primary m-5">Enroll</button>
+                <button onClick={this.handleClick} className="ch-btn btn btn-primary m-3">Enroll</button>
             <Slider />
             </div>
         </div>
