@@ -20,7 +20,7 @@ class Advantage extends React.Component{
         // else{
 
         // }
-        e.preventDefault()
+        
         const alert = document.querySelector('.form-success')
         alert.classList.add('form-show')
         e.target.myName.value=''
