@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6669ea332a7514e812b321508ea66bef",
+    "revision": "7bd964fc280cc96451ff56053a9d8899",
     "url": "/index.html"
   },
   {
-    "revision": "fa778b36342b85151f77",
+    "revision": "f14cc498f3d9e0680390",
     "url": "/static/css/2.e7926249.chunk.css"
   },
   {
-    "revision": "ddde766e3f72c328ac9e",
+    "revision": "75b8b0fe61f0a4842697",
     "url": "/static/css/main.2b0820e1.chunk.css"
   },
   {
-    "revision": "fa778b36342b85151f77",
-    "url": "/static/js/2.0ebb1972.chunk.js"
+    "revision": "f14cc498f3d9e0680390",
+    "url": "/static/js/2.7489860c.chunk.js"
   },
   {
     "revision": "8ffae3e638cc08a9cb962eacfc1c46d4",
-    "url": "/static/js/2.0ebb1972.chunk.js.LICENSE"
+    "url": "/static/js/2.7489860c.chunk.js.LICENSE"
   },
   {
-    "revision": "ddde766e3f72c328ac9e",
-    "url": "/static/js/main.784de0e4.chunk.js"
+    "revision": "75b8b0fe61f0a4842697",
+    "url": "/static/js/main.d16183bb.chunk.js"
   },
   {
     "revision": "16bf403f85a67a0fb936",
@@ -38,10 +38,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "e74daaaad32dc1331ff7d7b675235d6e",
     "url": "/static/media/chinese-blackboard.e74daaaa.png"
-  },
-  {
-    "revision": "a946f5a271f9138c009b29cd0d444747",
-    "url": "/static/media/hands.a946f5a2.svg"
   },
   {
     "revision": "6f133a7d8321639f2dd00cb0fb059206",
@@ -64,27 +60,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/kanji2.891a1203.jpg"
   },
   {
-    "revision": "89378ddbd8ad3aae1347911868f68799",
-    "url": "/static/media/level.89378ddb.jpg"
-  },
-  {
-    "revision": "7d31297d5c12a8335defc668790084d2",
-    "url": "/static/media/opm.7d31297d.png"
-  },
-  {
-    "revision": "eaedbfe35323ecfbc2844eaed950db9e",
-    "url": "/static/media/origami.eaedbfe3.svg"
-  },
-  {
     "revision": "f4a76d61ef1bf015ca07eb5feebbeaff",
     "url": "/static/media/tea.f4a76d61.jpg"
-  },
-  {
-    "revision": "0d357aa2988ac5bea95d62f31afd94b3",
-    "url": "/static/media/teacher.0d357aa2.jpg"
-  },
-  {
-    "revision": "6e81da9a839fd944b69ccd29b5adb2d7",
-    "url": "/static/media/thumb.6e81da9a.svg"
   }
 ]);

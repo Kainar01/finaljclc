@@ -82,10 +82,12 @@ class CallBack extends React.Component{
                 
                 
                 <PhoneInput
+                inputProps={{
+                    name: 'myTel'}
+                    
+                  }
                     type="tel"   
-                    name="myTel"
                     disableDropdown={true}
-                        
                     country='kz'
                     onlyCountries={['kz']}
                     value={this.state.value}
@@ -101,10 +103,13 @@ class CallBack extends React.Component{
                 
                 
                 <PhoneInput
+                inputProps={{
+                    name: 'myTel'}
+                    
+                  }
                     type="tel"   
                     name="myTel"
                     disableDropdown={true}
-                        
                     country='kz'
                     onlyCountries={['kz']}
                     value={this.state.value}
@@ -121,10 +126,12 @@ class CallBack extends React.Component{
                 
                 
                 <PhoneInput
-                    type="tel"   
-                    name="myTel"
-                    disableDropdown={true}
+                     inputProps={{
+                        name: 'myTel'}
                         
+                      }
+                    type="tel"   
+                    disableDropdown={true}
                     country='kz'
                     onlyCountries={['kz']}
                     value={this.state.value}
