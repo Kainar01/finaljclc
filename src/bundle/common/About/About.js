@@ -4,7 +4,32 @@ import Slider from './ChSlider'
 import CardDeck from 'react-bootstrap/CardDeck'
 import JpSlider from './JpSlider'
 class About extends React.Component  {
-   
+    constructor(props){
+        super(props)
+        this.handleClick = this.handleClick.bind(this)
+    }
+    
+    handleClick(e){
+        let formName=''
+        if(e.target.classList.contains('jp-btn')){
+            formName='jp-form'
+            
+        }
+        else if(e.target.classList.contains('ch-btn')){
+            formName='ch-form'
+        }
+        else{
+            formName='just-form'
+        }
+       
+        let form = document.querySelector(`.${formName}`)
+        console.log(form);
+        
+        form.parentElement.classList.remove('hide')
+        form.classList.remove('hide')
+
+        
+    }
     render(){
     return (
         <div className="about" id="about">
@@ -29,6 +54,8 @@ class About extends React.Component  {
                     </p>
             
                 </div>
+                
+                <button onClick={this.handleClick} className="jp-btn btn btn-primary m-5">Enroll</button>
             <JpSlider />
             </div>
             <div className='jp' id = "ch">
@@ -41,6 +68,7 @@ class About extends React.Component  {
                     </p>
             
                 </div>
+                <button onClick={this.handleClick} className="ch-btn btn btn-primary m-5">Enroll</button>
             <Slider />
             </div>
         </div>

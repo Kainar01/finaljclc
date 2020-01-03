@@ -1,6 +1,7 @@
 
 import React from 'react'
-import Advantage from '../About/Advantage'
+
+import CallBack from './CallBack';
 class Contacts extends React.Component{
     
     render(){
@@ -45,7 +46,9 @@ class Contacts extends React.Component{
 				© 2017 Copyright: <a href="" className="text-white"> Японско-китайский языковой центр</a>
 			</div>
 		</div>
-        <Advantage/>
+		<div className="contact-card">
+        <CallBack/>
+		</div>
 	</footer>
 
     );

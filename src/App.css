@@ -535,13 +535,16 @@ body {
 }
 
 .contact-form label {
+  margin-left: 5%;
   float: left;
   width: 20%;
 }
 
 .contact-form input {
   display: block;
-  width: 60%;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .form-success {
@@ -559,6 +562,47 @@ body {
   transition: opacity 1s ease-out;
 }
 
+.contact-container {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: rgba(0, 0, 0, 0.4);
+  top: 0;
+}
+
+.contact-form {
+  z-index: 1000 !important;
+  width: 85vw;
+  height: auto;
+  background: white;
+  color: black;
+  border-radius: 10px;
+  max-width: 500px;
+}
+
+.contact-form label {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.contact-form input {
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.contact-form button {
+  z-index: 100;
+}
+
 @media screen and (max-height: 605px) and (orientation: landscape) {
   .jp-bg, .ch-bg {
     height: 70vh !important;
@@ -571,5 +615,86 @@ body {
     width: 60%;
     left: 20%;
   }
+}
+
+@media screen and (max-width: 605px) and (orientation: portrait) {
+  .contact-form {
+    width: 80vw;
+    height: auto;
+    background: white;
+    color: black;
+    border-radius: 10px;
+    max-width: 500px;
+  }
+  .contact-form h5 {
+    margin-bottom: 5px !important;
+    padding-bottom: 5px !important;
+  }
+  .contact-form label {
+    width: 40%;
+    margin-left: 15%;
+    float: left;
+    text-align: left;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .contact-form input {
+    display: block;
+    width: 70%;
+    margin-left: 15%;
+  }
+  .contact-form .react-tel-input {
+    margin-left: 15% !important;
+  }
+  .contact-form .react-tel-input input {
+    width: 70% !important;
+  }
+}
+
+@media screen and (max-width: 400px) and (orientation: landscape) {
+  .contact-form {
+    width: 80vw;
+    height: auto;
+    background: white;
+    color: black;
+    border-radius: 10px;
+    max-width: 500px;
+    max-height: 80vh;
+  }
+  .contact-form h5 {
+    margin-bottom: 5px !important;
+    padding-bottom: 5px !important;
+  }
+  .contact-form label {
+    width: 40%;
+    margin-left: 15%;
+    float: left;
+    text-align: left;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .contact-form input {
+    display: block;
+    width: 70%;
+    margin-left: 15%;
+  }
+  .contact-form .react-tel-input {
+    margin-left: 15% !important;
+  }
+  .contact-form .react-tel-input input {
+    width: 70% !important;
+  }
+}
+
+.carousel-indicators {
+  z-index: 0 !important;
+}
+
+.react-tel-input {
+  margin-left: 25% !important;
+}
+
+.react-tel-input input {
+  width: 50% !important;
 }
 /*# sourceMappingURL=App.css.map */

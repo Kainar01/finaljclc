@@ -44,7 +44,7 @@ class Tel extends React.Component{
             <div className="form-group">
             <PhoneInput
             type="tel"   
-            name="tel"
+            name="myTel"
             disableDropdown={true}
                  
             country='kz'
