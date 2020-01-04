@@ -42,9 +42,7 @@ export default class Feedback extends React.Component{
                 
  
                 
-                <div>
-                {this.state.feedback}
-                </div>
+                <div></div>
             
         );
     }
