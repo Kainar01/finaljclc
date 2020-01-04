@@ -6,6 +6,7 @@ export default class Feedback extends React.Component{
     constructor(props){
         super(props)
         this.state={feedback:''}
+        this.createFullPostMarkup = this.createFullPostMarkup.bind(this)
     }
     UNSAFE_componentWillMount(){
         axios.get('https://kashok.kz/mysql.php')
@@ -17,6 +18,9 @@ export default class Feedback extends React.Component{
                     .catch(error => {
                         console.log(error);
                     });
+    }
+    createFullPostMarkup() {
+        return { __html:  `${this.state.feedback}`  }
     }
     render(){
         const responsive = {
@@ -36,14 +40,15 @@ export default class Feedback extends React.Component{
                 slidesToSlide: 1, // optional, default to 1.
             },
             };
+        
         return (
             
-            
+            <div class="container">
+            <div class="card-deck" dangerouslySetInnerHTML={{__html: this.state.feedback}}>
                 
- 
-                
-                <div>{this.state.feedback}</div>
-            
+            </div>
+        </div>
+              
         );
     }
 }
