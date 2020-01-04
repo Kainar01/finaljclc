@@ -43,11 +43,11 @@ export default class Feedback extends React.Component{
         
         return (
             
-            <div class="container">
+           
             <div class="card-deck" dangerouslySetInnerHTML={{__html: this.state.feedback}}>
                 
             </div>
-        </div>
+        
               
         );
     }

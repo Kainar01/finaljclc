@@ -4,6 +4,7 @@ import About from '../About/About.js'
 import GoUp from './GoUp.js'
 import Contacts from '../Contacts/Contacts.js'
 import Feedback from '../Feedback/Feedback.js'
+import FeedbackForm from '../Feedback/FeedbackForm'
 // import {
 //     BrowserRouter as Router,
 //     Switch,
@@ -28,7 +29,8 @@ const Home = ()=> {
             <About/>
             </div>
             <GoUp/>
-            <Feedback/>
+            <FeedbackForm/>
+            
             <Contacts/>
         </div>
     );
