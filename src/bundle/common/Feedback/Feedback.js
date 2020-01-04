@@ -10,7 +10,7 @@ export default class Feedback extends React.Component{
     UNSAFE_componentWillMount(){
         axios.get('https://kashok.kz/mysql.php')
                     .then(response => {
-                        var value = response;
+                        var value = response.data;
                         this.setState({feedback:value})
                         console.log(value);
                     })
@@ -42,7 +42,7 @@ export default class Feedback extends React.Component{
                 
  
                 
-                <div></div>
+                <div>{this.state.feedback}</div>
             
         );
     }
