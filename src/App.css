@@ -278,7 +278,7 @@ body {
   .carousel-item img {
     -o-object-fit: cover;
        object-fit: cover;
-    height: 50vh !important;
+    height: 70vh !important;
     background-color: black;
     opacity: 0.9;
   }
@@ -380,7 +380,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   min-height: 7vh;
-  max-height: 10vh;
+  max-height: 30vh;
   margin: auto;
   -webkit-transition: 0.15s linear !important;
   transition: 0.15s linear !important;
@@ -696,5 +696,20 @@ body {
 
 .react-tel-input input {
   width: 50% !important;
+}
+
+.jlpt {
+  -o-object-fit: contain !important;
+     object-fit: contain !important;
+}
+
+.carousel-item img {
+  -webkit-filter: brightness(70%);
+          filter: brightness(70%);
+}
+
+.ch-btn, .jp-btn {
+  background-color: #fdb900 !important;
+  border: none !important;
 }
 /*# sourceMappingURL=App.css.map */

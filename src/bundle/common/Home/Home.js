@@ -3,6 +3,7 @@ import Intro from './Intro'
 import About from '../About/About.js'
 import GoUp from './GoUp.js'
 import Contacts from '../Contacts/Contacts.js'
+import Feedback from '../Feedback/Feedback.js'
 // import {
 //     BrowserRouter as Router,
 //     Switch,
@@ -20,13 +21,14 @@ const Home = ()=> {
             </div>
             <div className="yellow-bg  justify-center ">
                 <h6 className="m-auto">
-                20% скидка на первый месяц обучение языка!
+                10% скидка на первый месяц обучение языка!
                 </h6>
             </div>
             <div>
             <About/>
             </div>
             <GoUp/>
+            <Feedback/>
             <Contacts/>
         </div>
     );

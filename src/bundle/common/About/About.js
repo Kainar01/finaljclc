@@ -47,15 +47,15 @@ class About extends React.Component  {
                     <h4 className="mb-4 mt-4">
                         Зачем учить японский?
                     </h4>
-                    <p className="mb-5 mt-4 ">
+                    <p className="mb-4 mt-4 ">
                         Изучив японский вы можете жить,работать и учиться в Японии. 
                         Японские университеты – одни из лучших в мире, сразу пять из них вошло в Топ-100 вузов мира.
                         А барьером для наших поехать туда является язык. И наш центр поможет вам сломать этот барьер!
                     </p>
             
                 </div>
-                
-                <button onClick={this.handleClick} className="jp-btn btn btn-primary m-3">Enroll</button>
+                <h5 className="w-75 m-auto">Запишитесь на бесплатный пробный урок чтобы узнать подойдет ли вам наш центр!</h5>
+                <button onClick={this.handleClick} className="jp-btn btn btn-primary m-3">Записаться на японский</button>
             <JpSlider />
             </div>
             <div className='jp' id = "ch">
@@ -63,12 +63,13 @@ class About extends React.Component  {
                     <h4 className="mb-4 mt-4">
                         Китайский нужно знать!
                     </h4>
-                    <p className="mb-5 mt-4 ">
+                    <p className="mb-4 mt-4 ">
                         В наши дни знание китайского языка откроает вам много возможностей, такие как обучение в Китае и бизнес с Китаем. И у нас вы можете получить достойное обучение китайского языка!
                     </p>
             
                 </div>
-                <button onClick={this.handleClick} className="ch-btn btn btn-primary m-3">Enroll</button>
+                <h5 className="w-75 m-auto">Запишитесь на бесплатный пробный урок чтобы узнать подойдет ли вам наш центр!</h5>
+                <button onClick={this.handleClick} className="ch-btn btn btn-primary m-3">Записаться на китайский</button>
             <Slider />
             </div>
         </div>

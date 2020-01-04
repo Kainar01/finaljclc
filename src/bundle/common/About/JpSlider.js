@@ -3,7 +3,7 @@ import {useState} from 'react'
 import Carousel from 'react-bootstrap/Carousel'
 import img3 from '../../.././assets/tea.jpg'
 import img2 from '../../.././assets/kanji1.jpg'
-import img1 from '../../.././assets/kanji2.jpg'
+import img1 from '../../.././assets/jlpt.jpg'
 function JpSlider() {
     const [index, setIndex] = useState(0);
     const [direction, setDirection] = useState(null);
@@ -17,7 +17,7 @@ function JpSlider() {
       <Carousel className="carousel " activeIndex={index} direction={direction} onSelect={handleSelect}>
         <Carousel.Item>
           <img 
-            className="d-block w-100 h-50"
+            className="d-block w-100 h-50 jlpt"
             src={img1}
             alt="First slide"
           />

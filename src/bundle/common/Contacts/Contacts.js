@@ -18,7 +18,7 @@ class Contacts extends React.Component{
 				<div class="col-xl-4 ml-auto col-lg-4 mt-2 mb-1 col-md-6 wow fadeIn" data-wow-delay="0.3s">
 					<h5 class="title"><strong>Контакты</strong></h5>  
 					<p><i class="fa fa-home mr-3"></i> Астана, ул.Сарыарка 3/1, БЦ "Болашак", офис 401.</p>
-					<p><i class="fa fa-envelope mr-3"></i> hitomi.jc@mail.ru</p>
+					<p><i class="fa fa-envelope mr-3"></i> jclc.ast@mail.ru</p>
 					<p><i class="fa fa-phone mr-3"></i> +7–777–305–08–36</p>
 					<p><i class="fa fa-phone mr-3"></i> +7–701–305–01–88</p>
 				</div>
@@ -43,7 +43,7 @@ class Contacts extends React.Component{
 		<hr/>
 		<div class="footer-copyright">
 			<div class="container-fluid">
-				© 2017 Copyright: <a href="" className="text-white"> Японско-китайский языковой центр</a>
+				© 2020 Copyright: <a href="" className="text-white"> Японско-китайский языковой центр</a>
 			</div>
 		</div>
 		<div className="contact-card">

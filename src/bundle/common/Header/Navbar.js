@@ -2,6 +2,7 @@ import React from 'react'
 import About from '../About/About.js'
 import Home from '../Home/Home.js'
 import Contacts from '../Contacts/Contacts.js'
+import Feedback from '../Feedback/Feedback.js'
 // import {Link as Scroll} from 'react-scroll'
 import {
     BrowserRouter as Router,
@@ -42,7 +43,7 @@ class NavBar extends React.Component  {
         
         if( !this.state.linkVisible){
             setTimeout(function(){
-            for (let i = 0; i < 4; i++) {
+            for (let i = 0; i < 5; i++) {
                 (function (i) {
                     setTimeout(function () {
                         links[i].classList.toggle('opacity')
@@ -80,7 +81,7 @@ class NavBar extends React.Component  {
             
     }
     else{
-        for(let i=0; i<4; i++){
+        for(let i=0; i<5; i++){
             links[i].classList.toggle('opacity')
             links[i].classList.toggle('nav-translate')
         }
@@ -146,10 +147,11 @@ class NavBar extends React.Component  {
                         <i className="las la-times cross hide"></i>
                         </button>
                         <ul className="nav-ul">
-                            <Link to="/" className="nav-link">Home</Link>
-                            <Link to="/about" className="nav-link">About</Link>
-                            <Link to="/contacts" className="nav-link">Contacts</Link>
-                            <Link to="/enroll" className="nav-link ">Enroll</Link>
+                            <Link to="/" className="nav-link">Главная</Link>
+                            <Link to="/about" className="nav-link">О Нас</Link>
+                            <Link to="/contacts" className="nav-link">Контакты</Link>
+                            <Link to="/feedback" className="nav-link ">Отзывы</Link>
+                            <Link to="/enroll" className="nav-link ">Вакансии</Link>
                         </ul>
                     
                     </nav>
@@ -163,6 +165,9 @@ class NavBar extends React.Component  {
                     </Route>
                     <Route path="/enroll">
                         <Advantage />
+                    </Route>
+                    <Route path="/feedback">
+                        <Feedback />
                     </Route>
                     <Route path="/lang">
                         <Introduction />
