@@ -1,31 +1,32 @@
 {
   "files": {
-    "main.css": "/static/css/main.2b0820e1.chunk.css",
-    "main.js": "/static/js/main.6a25ef2d.chunk.js",
-    "main.js.map": "/static/js/main.6a25ef2d.chunk.js.map",
+    "main.css": "/static/css/main.6d8188a3.chunk.css",
+    "main.js": "/static/js/main.6f40b7d0.chunk.js",
+    "main.js.map": "/static/js/main.6f40b7d0.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.12a6431d.js",
     "runtime-main.js.map": "/static/js/runtime-main.12a6431d.js.map",
-    "static/css/2.e7926249.chunk.css": "/static/css/2.e7926249.chunk.css",
-    "static/js/2.313dabc2.chunk.js": "/static/js/2.313dabc2.chunk.js",
-    "static/js/2.313dabc2.chunk.js.map": "/static/js/2.313dabc2.chunk.js.map",
+    "static/css/2.4102909c.chunk.css": "/static/css/2.4102909c.chunk.css",
+    "static/js/2.1b6ba8c1.chunk.js": "/static/js/2.1b6ba8c1.chunk.js",
+    "static/js/2.1b6ba8c1.chunk.js.map": "/static/js/2.1b6ba8c1.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.493371f46b2d499680aa9bc0175f815e.js": "/precache-manifest.493371f46b2d499680aa9bc0175f815e.js",
+    "precache-manifest.bdbdefa9d0f4ae256b65060cc4bf4e45.js": "/precache-manifest.bdbdefa9d0f4ae256b65060cc4bf4e45.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/2.e7926249.chunk.css.map": "/static/css/2.e7926249.chunk.css.map",
-    "static/css/main.2b0820e1.chunk.css.map": "/static/css/main.2b0820e1.chunk.css.map",
-    "static/js/2.313dabc2.chunk.js.LICENSE": "/static/js/2.313dabc2.chunk.js.LICENSE",
+    "static/css/2.4102909c.chunk.css.map": "/static/css/2.4102909c.chunk.css.map",
+    "static/css/main.6d8188a3.chunk.css.map": "/static/css/main.6d8188a3.chunk.css.map",
+    "static/js/2.1b6ba8c1.chunk.js.LICENSE": "/static/js/2.1b6ba8c1.chunk.js.LICENSE",
     "static/media/HSK-logo.jpg": "/static/media/HSK-logo.21c7f50a.jpg",
     "static/media/App.css": "/static/media/jp-ch1.584781dd.jpg",
     "static/media/chinese-blackboard.png": "/static/media/chinese-blackboard.e74daaaa.png",
+    "static/media/jlpt.jpg": "/static/media/jlpt.f7fbc38c.jpg",
     "static/media/kanji1.jpg": "/static/media/kanji1.bc246fd7.jpg",
-    "static/media/kanji2.jpg": "/static/media/kanji2.891a1203.jpg",
+    "static/media/styles.css": "/static/media/revicons.2feb69cc.eot",
     "static/media/tea.jpg": "/static/media/tea.f4a76d61.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.12a6431d.js",
-    "static/css/2.e7926249.chunk.css",
-    "static/js/2.313dabc2.chunk.js",
-    "static/css/main.2b0820e1.chunk.css",
-    "static/js/main.6a25ef2d.chunk.js"
+    "static/css/2.4102909c.chunk.css",
+    "static/js/2.1b6ba8c1.chunk.js",
+    "static/css/main.6d8188a3.chunk.css",
+    "static/js/main.6f40b7d0.chunk.js"
   ]
 }
