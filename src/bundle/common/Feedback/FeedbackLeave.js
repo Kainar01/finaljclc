@@ -28,14 +28,7 @@ export default class FeedbackLeave extends React.Component{
                                         <input type="text" className="form-control"  name="name" placeholder="Ваше имя..." required />
                                     </div>
                                 </div>
-                                <div className="form-group d-none">
-                                    <div className="input-group mb-2">
-                                        <div className="input-group-prepend">
-                                            <div className="input-group-text"><i className="fa fa-envelope text-info"></i></div>
-                                        </div>
-                                        <input type="email" className="form-control" id="nombre" name="email" placeholder="Ваша почта..." required />
-                                    </div>
-                                </div>
+                                
 
                                 <div className="form-group">
                                     <div className="input-group mb-2">
