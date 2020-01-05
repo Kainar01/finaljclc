@@ -1,64 +1,123 @@
 import React from 'react'
 import Feedback from './Feedback'
-export default class FeedbackForm extends React.Component{
-    render(){
+import FeedbackLeave from './FeedbackLeave';
+import {useEffect,useState} from 'react'
+export default function FeedbackForm(){
+    
+    const [count, setCount] = useState(0);
+    const [left, setLeft] = useState(0);
+    useEffect(() => {
+        
+        let fe=document.querySelectorAll('.card.mb-4')
+        let counter=count
+
+        if(count < fe.length ){
+            if(count+3 <= fe.length){
+                counter+=3
+            }
+            else if(count+2 <= fe.length){
+                counter+=2
+            }
+            else if(count+1 <= fe.length){
+                counter+=1
+            }
+        }
+        if(counter>3){
+            document.querySelector('.btn-load-less').style.display="block"
+        }
+        else{
+            document.querySelector('.btn-load-less').style.display="none"
+
+        }
+        if(counter==0 || counter+1>fe.length){
+            document.querySelector('.btn-load-more').style.display="none"
+        }
+        
+        for(let i=0;i<fe.length;i++){
+            if(i>=counter && !fe[i].classList.contains('hide')){
+            fe[i].classList.add('hide')}
+            else if(i<counter && fe[i].classList.contains('hide')){
+                fe[i].classList.remove('hide')
+            }
+        }
+        
+        
+        setCount(counter)
+        setLeft(fe.length-counter)
+    }, [])
+    const handleClick=(e)=>{
+        let fe=document.querySelectorAll('.card.mb-4')
+        let counter=count
+        //if clicked load more
+        if(e.target===document.querySelector('.btn-load-more')){
+        if(count < fe.length ){
+            if(count+3 <= fe.length){
+                counter+=3
+            }
+            else if(count+2 <= fe.length){
+                counter+=2
+            }
+            else if(count+1 <= fe.length){
+                counter+=1
+            }
+        }
+        
+        }
+        //if clicked load less
+         if(e.target===document.querySelector('.btn-load-less')){
+             
+             
+            if(count > 0 ){
+                if(count-3 >= 3){
+                    counter-=3
+                }
+                else if(count-2 >= 3){
+                    counter-=2
+                }
+                else if(count-1 >= 3){
+                    counter-=1
+                }
+            }
+        }
+        //hide needed elements
+            for(let i=0;i<fe.length;i++){
+                if(i>=counter && !fe[i].classList.contains('hide')){
+                fe[i].classList.add('hide')}
+                else if(i<counter && fe[i].classList.contains('hide')){
+                    fe[i].classList.remove('hide')
+                }
+            }
+
+            if(counter===fe.length){
+                document.querySelector('.btn-load-more').style.display="none"
+            }
+            else{
+                document.querySelector('.btn-load-more').style.display="block"
+            }
+            
+            if(counter>3){
+                document.querySelector('.btn-load-less').style.display="block"
+            }
+            else{
+                document.querySelector('.btn-load-less').style.display="none"
+
+            }
+            
+            setCount(counter)
+            setLeft(fe.length-counter)
+        }
+
+    
         return(
-            <div class="container">
-            <h2 class="text-center">Contact Form</h2>
-            <div class="row justify-content-center">
-                <div class="col-12 col-md-8 col-lg-6 pb-5">
-
-
-
-                            <form action="mail.php" method="post">
-                                <div class="card border-primary rounded-0">
-                                    <div class="card-header p-0">
-                                        <div class="bg-info text-white text-center py-2">
-                                            <h3><i class="fa fa-envelope"></i> Отзыв</h3>
-                                            <p class="m-0">Оставьте отзывы</p>
-                                        </div>
-                                    </div>
-                                    <div class="card-body p-3">
-
-                                        <div class="form-group">
-                                            <div class="input-group mb-2">
-                                                <div class="input-group-prepend">
-                                                    <div class="input-group-text"><i class="fa fa-user text-info"></i></div>
-                                                </div>
-                                                <input type="text" class="form-control" id="nombre" name="name" placeholder="Ваше имя..." required />
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <div class="input-group mb-2">
-                                                <div class="input-group-prepend">
-                                                    <div class="input-group-text"><i class="fa fa-envelope text-info"></i></div>
-                                                </div>
-                                                <input type="email" class="form-control" id="nombre" name="email" placeholder="Ваша почта..." required />
-                                            </div>
-                                        </div>
-
-                                        <div class="form-group">
-                                            <div class="input-group mb-2">
-                                                <div class="input-group-prepend">
-                                                    <div class="input-group-text"><i class="fa fa-comment text-info"></i></div>
-                                                </div>
-                                                <textarea class="form-control" placeholder="Ваш отзыв..." name="feedback" required></textarea>
-                                            </div>
-                                        </div>
-
-                                        <div class="text-center">
-                                            <input type="submit" value="Подтвердить" class="btn btn-info btn-block rounded-0 py-2"/>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </form>
-
-
-                        </div>
-            </div>
+            <div className="container-fluid">
+            <FeedbackLeave/>
+            
             <Feedback/>
+            <button onClick={handleClick} className="btn-load-less btn btn-primary">load less </button>
+        <button onClick={handleClick} className="btn-load-more btn btn-primary">load more {left}</button>
         </div>
+        
+
         );
-    }
+    
 }

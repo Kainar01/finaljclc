@@ -14,7 +14,7 @@ class Intro extends React.Component{
                     Запишитесь на БЕСПЛАТНЫЙ пробный урок с носителем языка!
                 </p>
                 
-                <a href={(window.innerHeight < 700 && window.innerWidth<500) ? 'https://wa.me/77773050791?text=Хочу%20записаться%20на%20пробный%20урок.':''  }><Button   className="btn btn-lg btn-primary ">Записаться </Button></a>
+                <a href={(window.innerHeight < 700 && window.innerWidth<500) ? 'https://wa.me/77773050791?text=Хочу%20записаться%20на%20пробный%20урок.':'#home'  }><Button   className="btn btn-lg btn-primary ">Записаться </Button></a>
                 
             </div>
         );

@@ -3,7 +3,7 @@ import Intro from './Intro'
 import About from '../About/About.js'
 import GoUp from './GoUp.js'
 import Contacts from '../Contacts/Contacts.js'
-import Feedback from '../Feedback/Feedback.js'
+// import Feedback from '../Feedback/Feedback.js'
 import FeedbackForm from '../Feedback/FeedbackForm'
 // import {
 //     BrowserRouter as Router,
@@ -14,7 +14,7 @@ import FeedbackForm from '../Feedback/FeedbackForm'
 const Home = ()=> {
     return (
         <div >
-            <div class="position-fixed  mt-5 form-success alert alert-success">
+            <div className="position-fixed  mt-5 form-success alert alert-success">
   <strong>Заявка успешно оставлена!</strong> 
 </div>
             <div className="home d-flex  justify-content-center align-items-center" id="home">

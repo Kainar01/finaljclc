@@ -79,8 +79,8 @@ class CallBack extends React.Component{
     render(){
         return (
 
-            <div onClick={this.handleClick} id="contact-container" class="contact-container hide">
-             <form onClick={this.handleChild} onSubmit={this.handleSubmit} id="contact-form" method="POST" action="send.php" className="contact-form jp-form hide">
+            <div onClick={this.handleClick} id="contact-container" className="contact-container hide">
+             <form onClick={this.handleChild} onSubmit={this.handleSubmit}  method="POST" action="send.php" className="contact-form jp-form hide">
                 <h5 className="text-center p-3 mb-2 mt-2 w-75 ml-auto mr-auto">Оставьте заявку на пробный урок!</h5>
                 <input type="text" name="myName" placeholder="Ваше имя..." className="form-control " required/>
                 
@@ -101,7 +101,7 @@ class CallBack extends React.Component{
                 <input type="hidden" name="action" value="Japanese"/>
                 <button type="submit" name="btn" value="Send" className="contact btn btn-primary m-4" >Оставить заявку </button>
             </form>
-            <form onClick={this.handleChild} onSubmit={this.handleSubmit} id="contact-form" method="POST" action="send.php" className="contact-form just-form hide">
+            <form onClick={this.handleChild} onSubmit={this.handleSubmit}  method="POST" action="send.php" className="contact-form just-form hide">
                 <h5 className="text-center p-3 mb-2 mt-2 w-75 ml-auto mr-auto">Оставьте заявку на пробный урок!</h5>
                 <input type="text" name="myName" placeholder="Ваше имя..." className="form-control " required/>
                 
@@ -124,7 +124,7 @@ class CallBack extends React.Component{
                 <button type="submit" name="btn" value="Send" className="contact btn btn-primary m-4" >Оставить заявку </button>
             </form>
             
-            <form onClick={this.handleChild} onSubmit={this.handleSubmit} id="contact-form" method="POST" action="send.php" className="contact-form ch-form hide">
+            <form onClick={this.handleChild} onSubmit={this.handleSubmit}  method="POST" action="send.php" className="contact-form ch-form hide">
                 <h5 className="text-center p-3 mb-2 mt-2 w-75 ml-auto mr-auto">Оставьте заявку на пробный урок!</h5>
                 <input type="text" name="myName" placeholder="Ваше имя..." className="form-control " required/>
                 

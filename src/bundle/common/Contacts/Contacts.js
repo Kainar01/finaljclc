@@ -6,26 +6,26 @@ class Contacts extends React.Component{
     
     render(){
         return (
-            <footer class="page-footer center-on-small-only text-center " id="contacts">
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-lg-4 col-md-6 ml-auto">
-					<h5 class="title mb-3"><strong>О нас</strong></h5>
-					<p class="lead">Японско-китайский языковой центр</p>
+            <footer className="page-footer center-on-small-only text-center " id="contacts">
+		<div className="container-fluid">
+			<div className="row">
+				<div className="col-lg-4 col-md-6 ml-auto">
+					<h5 className="title mb-3"><strong>О нас</strong></h5>
+					<p className="lead">Японско-китайский языковой центр</p>
 					<p>в Астане работает в сфере образования с 2013 года. Наш центр осуществляет обучение японскому и китайскому языку, а также сотрудничает с языковыми школами в Японии.</p>
 				</div>
-				<hr class="w-100 clearfix d-sm-none"/>
-				<div class="col-xl-4 ml-auto col-lg-4 mt-2 mb-1 col-md-6 wow fadeIn" data-wow-delay="0.3s">
-					<h5 class="title"><strong>Контакты</strong></h5>  
-					<p><i class="fa fa-home mr-3"></i> Астана, ул.Сарыарка 3/1, БЦ "Болашак", офис 401.</p>
-					<p><i class="fa fa-envelope mr-3"></i> jclc.ast@mail.ru</p>
-					<p><i class="fa fa-phone mr-3"></i> +7–777–305–08–36</p>
-					<p><i class="fa fa-phone mr-3"></i> +7–701–305–01–88</p>
+				<hr className="w-100 clearfix d-sm-none"/>
+				<div className="col-xl-4 ml-auto col-lg-4 mt-2 mb-1 col-md-6 wow fadeIn" data-wow-delay="0.3s">
+					<h5 className="title"><strong>Контакты</strong></h5>  
+					<p><i className="fa fa-home mr-3"></i> Астана, ул.Сарыарка 3/1, БЦ "Болашак", офис 401.</p>
+					<p><i className="fa fa-envelope mr-3"></i> jclc.ast@mail.ru</p>
+					<p><i className="fa fa-phone mr-3"></i> +7–777–305–08–36</p>
+					<p><i className="fa fa-phone mr-3"></i> +7–701–305–01–88</p>
 				</div>
-				<hr class="w-100 clearfix d-sm-none"/>
-				<div class="col-xl-3 ml-auto col-lg-4 mt-2 mb-1 col-md-6 wow fadeIn" data-wow-delay="0.3s">
-					<h5 class="title mb-2"><strong>график работы</strong></h5>
-					<table class="table footer-table text-center">
+				<hr className="w-100 clearfix d-sm-none"/>
+				<div className="col-xl-3 ml-auto col-lg-4 mt-2 mb-1 col-md-6 wow fadeIn" data-wow-delay="0.3s">
+					<h5 className="title mb-2"><strong>график работы</strong></h5>
+					<table className="table footer-table text-center">
 						<tbody className="text-white">
 							<tr>
 								<td >Пн - Пт:</td>
@@ -41,9 +41,9 @@ class Contacts extends React.Component{
 			</div>
 		</div>
 		<hr/>
-		<div class="footer-copyright">
-			<div class="container-fluid">
-				© 2020 Copyright: <a href="" className="text-white"> Японско-китайский языковой центр</a>
+		<div className="footer-copyright">
+			<div className="container-fluid">
+				© 2020 Copyright: <a href="#home" className="text-white"> Японско-китайский языковой центр</a>
 			</div>
 		</div>
 		<div className="contact-card">
