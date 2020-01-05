@@ -7,10 +7,11 @@ export default function FeedbackForm(){
     const [count, setCount] = useState(0);
     const [left, setLeft] = useState(0);
     useEffect(() => {
-        
+        console.log('hello')
+
         let fe=document.querySelectorAll('.card.mb-4')
         let counter=count
-
+        console.log(fe)
         if(count < fe.length ){
             if(count+3 <= fe.length){
                 counter+=3
