@@ -10,10 +10,10 @@ const Feedback = () => {
                     .then(response => {
                         var value = response.data;
                         setFeed(value)
-                        console.log(value);
+                        
                     })
                     .catch(error => {
-                        console.log(error);
+                        
                     });
         
                     

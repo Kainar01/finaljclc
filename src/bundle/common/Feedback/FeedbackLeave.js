@@ -1,5 +1,21 @@
 import React from 'react'
 export default class FeedbackLeave extends React.Component{
+    constructor(props){
+        super(props)
+        this.handleSubmit = this.handleSubmit.bind(this)
+    }
+    handleSubmit(){
+       
+        const alert = document.querySelector('.form-success')
+        alert.classList.add('form-show')
+        
+        
+        this.timer = setTimeout(() => {
+            alert.classList.remove('form-show')  }, 3000)
+        
+        
+        
+    }
     render(){
         return(
             <div className="ml-auto mr-auto mt-4">
@@ -9,7 +25,7 @@ export default class FeedbackLeave extends React.Component{
 
 
 
-                    <form action="mail.php" method="post">
+                    <form onSubmit={this.handleSubmit} action="mail.php" method="post">
                         <div className="card border-primary rounded-0">
                             <div className="card-header p-0">
                                 <div className="bg-info text-white text-center py-2">

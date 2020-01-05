@@ -15,7 +15,7 @@ export default function FeedbackForm(){
                     .then(response => {
                         var value = response.data;
                         setFeed(value)
-                        console.log(value);
+                        
                     })
                     .catch(error => {
                         console.log(error);
@@ -31,7 +31,7 @@ export default function FeedbackForm(){
             setMount(true)
         }
         let counter=count
-        console.log(fe)
+        
         if(count < fe.length ){
             if(count+3 <= fe.length){
                 counter+=3
@@ -56,7 +56,7 @@ export default function FeedbackForm(){
         else{
             document.querySelector('.btn-load-more').style.display="block"
         }
-        console.log(counter,'counter')
+        
         for(let i=0;i<fe.length;i++){
             if(i>=counter && !fe[i].classList.contains('hide')){
             fe[i].classList.add('hide')}

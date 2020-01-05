@@ -46,12 +46,10 @@ class CallBack extends React.Component{
         
         
         
-        console.log('parent');
         
         
     }
     handleChild(e){
-        console.log('child');
         e.stopPropagation()
         
     }
