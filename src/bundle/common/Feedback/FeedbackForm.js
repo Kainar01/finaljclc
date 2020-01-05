@@ -31,14 +31,14 @@ export default function FeedbackForm(){
         if(counter>3){
             document.querySelector('.btn-load-less').style.display="block"
         }
-        else{
+        else if(counter<=3){
             document.querySelector('.btn-load-less').style.display="none"
 
         }
-        if(counter===0 || counter+1>fe.length){
+        if(counter+1>fe.length || count===fe.length){
             document.querySelector('.btn-load-more').style.display="none"
         }
-        
+        console.log(counter,'counter')
         for(let i=0;i<fe.length;i++){
             if(i>=counter && !fe[i].classList.contains('hide')){
             fe[i].classList.add('hide')}
