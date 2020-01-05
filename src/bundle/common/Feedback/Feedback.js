@@ -6,7 +6,7 @@ const Feedback = () => {
     const [feedback,setFeed] = useState('')
     useEffect(()=>{
         
-        axios.get('https://kashok.kz/mysql.php')
+        axios.get('http://kashok.kz/mysql.php')
                     .then(response => {
                         var value = response.data;
                         setFeed(value)
@@ -16,9 +16,9 @@ const Feedback = () => {
                         console.log(error);
                     });
         
-       
+                    
         
-    })
+    },[])
    
     return (
         

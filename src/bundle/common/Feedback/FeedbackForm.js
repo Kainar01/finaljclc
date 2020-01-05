@@ -1,14 +1,29 @@
 import React from 'react'
 import Feedback from './Feedback'
+import axios from 'axios'
 import FeedbackLeave from './FeedbackLeave';
 import {useEffect,useState} from 'react'
 export default function FeedbackForm(){
-    
+    const [feedback,setFeed]= useState('');
     const [count, setCount] = useState(0);
     const [left, setLeft] = useState(0);
     const [mount,setMount] = useState(false)
     useEffect(() => {
         console.log('hello')
+
+        axios.get('http://kashok.kz/mysql.php')
+                    .then(response => {
+                        var value = response.data;
+                        setFeed(value)
+                        console.log(value);
+                    })
+                    .catch(error => {
+                        console.log(error);
+                    });
+        
+       
+        
+  
         if(!mount){
         
         let fe=document.querySelectorAll('.card.mb-4')
@@ -113,7 +128,7 @@ export default function FeedbackForm(){
             <div className="container-fluid">
             <FeedbackLeave/>
             
-            <Feedback />
+            <div className="card-deck" dangerouslySetInnerHTML={{__html: feedback}}></div>
             <button onClick={handleClick} className="btn-load-less btn btn-primary m-3">Меньше... </button>
             <button onClick={handleClick} className="btn-load-more btn btn-primary m-3">Еще {left}...</button>
         </div>
