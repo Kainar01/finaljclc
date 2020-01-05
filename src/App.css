@@ -725,4 +725,33 @@ body {
   border-bottom: 1px solid black;
   padding-bottom: 10px;
 }
+
+.job-form.contact-form input, .job-form.contact-form textarea {
+  width: 80%;
+}
+
+.job-form.contact-form input {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.job-form.contact-form textarea {
+  margin-left: 10% !important;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.job-form.contact-form .react-tel-input {
+  margin-left: 10% !important;
+}
+
+.job-form.contact-form .react-tel-input input {
+  width: 80% !important;
+  margin: 0 !important;
+}
+
+.x {
+  position: fixed;
+  left: 0;
+}
 /*# sourceMappingURL=App.css.map */

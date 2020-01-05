@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import Nav from './bundle/common/Header/Navbar.js'
-
+import Home from './bundle/common/Home/Home.js'
 class App extends React.Component {
   constructor(props){
     super(props)
@@ -38,7 +38,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <Nav/>
-        
+        <Home/>
       </div>
     );
   }

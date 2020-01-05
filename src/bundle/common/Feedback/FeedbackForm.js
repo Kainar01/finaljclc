@@ -11,7 +11,7 @@ export default function FeedbackForm(){
     useEffect(() => {
         console.log('hello')
 
-        axios.get('http://kashok.kz/mysql.php')
+        axios.get('https://jclc.kz/mysql.php')
                     .then(response => {
                         var value = response.data;
                         setFeed(value)
@@ -125,7 +125,7 @@ export default function FeedbackForm(){
 
     
         return(
-            <div className="container-fluid">
+            <div className="container-fluid" id="feedbacks">
             <FeedbackLeave/>
             
             <div className="card-deck" dangerouslySetInnerHTML={{__html: feedback}}></div>

@@ -29,7 +29,7 @@ const Home = ()=> {
             <About/>
             </div>
             <GoUp/>
-            <FeedbackForm/>
+            <FeedbackForm />
             
             <Contacts/>
         </div>

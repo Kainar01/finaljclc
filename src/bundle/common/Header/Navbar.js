@@ -3,6 +3,7 @@ import About from '../About/About.js'
 import Home from '../Home/Home.js'
 import Contacts from '../Contacts/Contacts.js'
 import Feedback from '../Feedback/Feedback.js'
+import {Link as Scroll} from 'react-scroll'
 // import {Link as Scroll} from 'react-scroll'
 import {
     BrowserRouter as Router,
@@ -20,6 +21,8 @@ class NavBar extends React.Component  {
         this.state={offset:0,bool:false,linkVisible: false,interval:0}
         this.handleScroll = this.handleScroll.bind(this)
         this.handleBtn = this.handleBtn.bind(this)
+        this.handleLink = this.handleLink.bind(this)
+        
     }
 
     UNSAFE_componentWillMount() {
@@ -27,12 +30,61 @@ class NavBar extends React.Component  {
         
         
     }
-    handleBtn(){
+    
+    handleLink(e){
         const nav = document.querySelector('.nav-ul')
         const links = document.querySelectorAll('.nav-link')
         const burger = document.querySelector('.burger')
         const cross = document.querySelector('.cross')
         const time = new Date()
+        if( time-this.state.interval>900){
+            this.setState({interval: time})
+        
+        
+        
+        nav.classList.toggle('nav-translate')
+        for(let i=0; i<5; i++){
+            links[i].classList.toggle('opacity')
+            links[i].classList.toggle('nav-translate')
+
+            if(e.target.classList.contains('job')){
+                const form = document.querySelector('.job-form')
+                form.parentElement.classList.remove('hide')
+                form.classList.remove('hide')
+            }
+        }
+        this.setState({linkVisible: false})
+
+
+                cross.style.transform = 'scale(0)'
+                
+            
+                if(cross.classList.contains('showed')){
+                    cross.classList.remove('showed')
+                }
+                if(burger.classList.contains('hide')){
+                    burger.classList.remove('hide')
+                }
+                cross.classList.toggle('hide')
+                burger.classList.toggle('showed')
+                setTimeout(function() {
+                    burger.style.transform = 'scale(1.5)'
+                }, 20);
+                setTimeout(function(){
+                    burger.style.transform = 'scale(1)'
+                },320)
+                
+                
+            }
+    }
+    handleBtn(){
+
+        const nav = document.querySelector('.nav-ul')
+        const links = document.querySelectorAll('.nav-link')
+        const burger = document.querySelector('.burger')
+        const cross = document.querySelector('.cross')
+        const time = new Date()
+        
         if( time-this.state.interval>900){
             this.setState({interval: time})
         
@@ -75,7 +127,7 @@ class NavBar extends React.Component  {
                 
                 
             }, 900);
-
+            
 
 
             
@@ -109,7 +161,7 @@ class NavBar extends React.Component  {
                 
            
     }
-
+    
     
     
     
@@ -129,56 +181,96 @@ class NavBar extends React.Component  {
     }
     UNSAFE_componentDidMount(){
         window.removeEventListener('scroll')
+
     }
     render(){
     
         
         
         return (
-            <Router>
+            
                 <div>
                     <nav className={"fixed-top nav " +(this.state.bool?'hideNav bottom-shadow':'')+' '+(this.state.offset>0 ? 'nav-yellow bottom-shadow':'')} >
-                        <Link to="/" className="text-dark logo ml-2 ">
+                        <a href="/home" className="text-dark logo ml-2 ">
                             JCLC
-                        </Link>
+                        </a>
                         
                         <button onClick={this.handleBtn} className="button">
                         <i className="fas fa-hamburger burger"></i>
                         <i className="las la-times cross hide"></i>
                         </button>
                         <ul className="nav-ul">
-                            <Link to="/" className="nav-link">Главная</Link>
-                            <Link to="/about" className="nav-link">О Нас</Link>
-                            <Link to="/contacts" className="nav-link">Контакты</Link>
-                            <Link to="/feedback" className="nav-link ">Отзывы</Link>
-                            <Link to="/enroll" className="nav-link ">Вакансии</Link>
+                        <Scroll activeClass="active"
+                            to='home'
+                            spy={true}
+                            smooth={true}
+                            hashSpy={true}
+                            offset={0}
+                            duration={500}
+                            delay={200}
+                            isDynamic={true}
+                            onSetActive={this.handleSetActive}
+                            onSetInactive={this.handleSetInactive}
+                            ignoreCancelEvents={false}
+                        >
+                            <span onClick={this.handleLink} className="btn nav-link"> Главная</span>
+                    </Scroll>
+                    <Scroll activeClass="active"
+                            to='about'
+                            spy={true}
+                            smooth={true}
+                            hashSpy={true}
+                            offset={0}
+                            duration={500}
+                            delay={200}
+                            isDynamic={true}
+                            onSetActive={this.handleSetActive}
+                            onSetInactive={this.handleSetInactive}
+                            ignoreCancelEvents={false}
+                        >
+                            <span onClick={this.handleLink} className="btn nav-link"> О Нас</span>
+                    </Scroll>
+                    <Scroll activeClass="active"
+                            to='contacts'
+                            spy={true}
+                            smooth={true}
+                            hashSpy={true}
+                            offset={0}
+                            duration={500}
+                            delay={200}
+                            isDynamic={true}
+                            onSetActive={this.handleSetActive}
+                            onSetInactive={this.handleSetInactive}
+                            ignoreCancelEvents={false}
+                        >
+                            <span onClick={this.handleLink} className="btn nav-link"> Контакты</span>
+                    </Scroll>
+                    <Scroll activeClass="active"
+                            to='feedbacks'
+                            spy={true}
+                            smooth={true}
+                            hashSpy={true}
+                            offset={0}
+                            duration={500}
+                            delay={200}
+                            isDynamic={true}
+                            onSetActive={this.handleSetActive}
+                            onSetInactive={this.handleSetInactive}
+                            ignoreCancelEvents={false}
+                        >
+                            <span onClick={this.handleLink} className="btn nav-link"> Отзывы</span>
+                    </Scroll>
+                    <a>
+                            <span onClick={this.handleLink} className="btn nav-link job"> Вакансии</span>
+                    </a>
+                            
                         </ul>
                     
                     </nav>
                     
-                    <Switch>
-                    <Route path="/about">
-                        <About />
-                    </Route>
-                    <Route path="/contacts">
-                        <Contacts />
-                    </Route>
-                    <Route path="/enroll">
-                        <Advantage />
-                    </Route>
-                    <Route path="/feedback">
-                        <Feedback />
-                    </Route>
-                    <Route path="/lang">
-                        <Introduction />
-                    </Route>
-                    <Route path="/">
-                        <Home />
-                    </Route>
                     
-                    </Switch>
                 </div>
-            </Router>
+            
         );
     }
 }

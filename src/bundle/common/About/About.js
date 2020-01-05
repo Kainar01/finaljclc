@@ -18,12 +18,10 @@ class About extends React.Component  {
         else if(e.target.classList.contains('ch-btn')){
             formName='ch-form'
         }
-        else{
-            formName='just-form'
-        }
+        
        
         let form = document.querySelector(`.${formName}`)
-        console.log(form);
+       
         
         form.parentElement.classList.remove('hide')
         form.classList.remove('hide')

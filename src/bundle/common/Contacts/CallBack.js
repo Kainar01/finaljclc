@@ -10,6 +10,7 @@ class CallBack extends React.Component{
         this.handleClick = this.handleClick.bind(this)
         this.handleChild = this.handleChild.bind(this)
     }
+    
     handleClick(e){
         // const form = document.querySelector('form')
         // var arr = [...form.children]
@@ -146,17 +147,29 @@ class CallBack extends React.Component{
                 <button type="submit" name="btn" value="Send" className="contact btn btn-primary m-4" >Оставить заявку </button>
             </form>
             
-        <form onSubmit={this.handleSubmit} className="hide" method="POST" action="email.php">
-            <div><label>Имя:</label></div>
-            <div><input type="text" name="myName" className="form-control"  /></div>
-            <div><label>Почта:</label></div>
-            <div><input type="text" name="myEmail" className="form-control" placeholder="example@gmail.com" required/></div>
+        <form onClick={this.handleChild} onSubmit={this.handleSubmit} className="job-form contact-form hide" method="POST" action="email.php">
+            
+        <h5 className="text-center text-center p-3 mb-2 mt-2 w-75 ml-auto mr-auto ">Оставьте заявку если хотите работать в нашем центре!</h5>
+            <input type="text" name="myName" placeholder="Ваше имя..." className="form-control"  />
+            
+            <input type="text" name="myEmail" className="form-control" placeholder="Ваша почта..." required/>
             <input type="text" id="website" name="website"/>
-            <div><label>Вопрос:</label></div>
-            <div><textarea cols="40" rows="5" name="myMessage" className="form-control" placeholder="Вопрос который вас интересует?" required></textarea></div>
-            <div className="float-right mt-2">
-                <input type="submit" value="Send" className="btn btn-primary" />
-            </div>
+            <PhoneInput
+                     inputProps={{
+                        name: 'myTel'}
+                        
+                      }
+                    type="tel"   
+                    disableDropdown={true}
+                    country='kz'
+                    onlyCountries={['kz']}
+                    value={this.state.value}
+                    onChange={value => this.setState({ value })}
+        />
+            <textarea cols="40" rows="5" name="myMessage" className="form-control" placeholder="Вопрос который вас интересует?" required></textarea>
+            
+                <button type="submit"  className="contact btn btn-primary mb-4" > Отправить</button>
+            
         </form>
     
             
