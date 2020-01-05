@@ -54,8 +54,9 @@ class About extends React.Component  {
                     </p>
             
                 </div>
-                <h5 className="w-75 m-auto">Запишитесь на бесплатный пробный урок чтобы узнать подойдет ли вам наш центр!</h5>
-                <button onClick={this.handleClick} className="jp-btn btn btn-primary m-3">Записаться на японский</button>
+                <div className="enroll-lang">
+                {/* <h5 className="w-75 m-auto">Запишитесь на бесплатный пробный урок чтобы узнать подойдет ли вам наш центр!</h5> */}
+                <button onClick={this.handleClick} className="jp-btn btn btn-primary m-3">Записаться на японский</button></div>
             <JpSlider />
             </div>
             <div className='jp' id = "ch">
@@ -68,8 +69,9 @@ class About extends React.Component  {
                     </p>
             
                 </div>
-                <h5 className="w-75 m-auto">Запишитесь на бесплатный пробный урок чтобы узнать подойдет ли вам наш центр!</h5>
-                <button onClick={this.handleClick} className="ch-btn btn btn-primary m-3">Записаться на китайский</button>
+                <div className="enroll-lang">
+                {/* <h5 className="w-75 m-auto">Запишитесь на бесплатный пробный урок чтобы узнать подойдет ли вам наш центр!</h5> */}
+                <button onClick={this.handleClick} className="ch-btn btn btn-primary m-3">Записаться на китайский</button></div>
             <Slider />
             </div>
         </div>

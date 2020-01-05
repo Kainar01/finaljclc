@@ -2,8 +2,8 @@ import React from 'react'
 export default class FeedbackLeave extends React.Component{
     render(){
         return(
-            <div className="ml-auto mr-auto">
-                <h2 className="text-center">Contact Form</h2>
+            <div className="ml-auto mr-auto mt-4">
+                
             <div className="row justify-content-center">
                 <div className="col-12 col-md-8 col-lg-6 pb-5">
 
@@ -13,8 +13,8 @@ export default class FeedbackLeave extends React.Component{
                         <div className="card border-primary rounded-0">
                             <div className="card-header p-0">
                                 <div className="bg-info text-white text-center py-2">
-                                    <h3><i className="fa fa-envelope"></i> Отзыв</h3>
-                                    <p className="m-0">Оставьте отзывы</p>
+                                    <h3><i className="fa fa-envelope"></i> Оставьте отзывы</h3>
+                                    <p className="m-0">Напишите о нашем центре если есть что сказать!</p>
                                 </div>
                             </div>
                            

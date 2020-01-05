@@ -645,6 +645,10 @@ body {
   .contact-form .react-tel-input input {
     width: 70% !important;
   }
+  .card.mb-4 {
+    min-width: 80vw !important;
+    max-width: 80vw !important;
+  }
 }
 
 @media screen and (max-width: 400px) and (orientation: landscape) {
@@ -712,8 +716,7 @@ body {
 .card.mb-4 {
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  min-width: 50vw !important;
-  max-width: 50vw !important;
+  width: 60vw !important;
   height: auto;
   border-radius: 0 !important;
 }

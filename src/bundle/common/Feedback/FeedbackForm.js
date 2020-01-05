@@ -69,17 +69,7 @@ export default function FeedbackForm(){
          if(e.target===document.querySelector('.btn-load-less')){
              
              
-            if(count > 0 ){
-                if(count-3 >= 3){
-                    counter-=3
-                }
-                else if(count-2 >= 3){
-                    counter-=2
-                }
-                else if(count-1 >= 3){
-                    counter-=1
-                }
-            }
+            counter=3
         }
         //hide needed elements
             for(let i=0;i<fe.length;i++){
@@ -115,8 +105,8 @@ export default function FeedbackForm(){
             <FeedbackLeave/>
             
             <Feedback change={handleChange}/>
-            <button onClick={handleClick} className="btn-load-less btn btn-primary">load less </button>
-        <button onClick={handleClick} className="btn-load-more btn btn-primary">load more {left}</button>
+            <button onClick={handleClick} className="btn-load-less btn btn-primary m-3">Меньше... </button>
+            <button onClick={handleClick} className="btn-load-more btn btn-primary m-3">Еще {left}...</button>
         </div>
         
 
