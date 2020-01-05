@@ -6,11 +6,15 @@ export default function FeedbackForm(){
     
     const [count, setCount] = useState(0);
     const [left, setLeft] = useState(0);
-    
-    const handleChange=(e)=>{
+    const [mount,setMount] = useState(false)
+    useEffect(() => {
         console.log('hello')
-
+        if(!mount){
+        
         let fe=document.querySelectorAll('.card.mb-4')
+        if(fe.length>0){
+            setMount(true)
+        }
         let counter=count
         console.log(fe)
         if(count < fe.length ){
@@ -46,7 +50,9 @@ export default function FeedbackForm(){
         
         setCount(counter)
         setLeft(fe.length-counter)
-    }
+        }
+    })
+        
     const handleClick=(e)=>{
         let fe=document.querySelectorAll('.card.mb-4')
         let counter=count
@@ -104,7 +110,7 @@ export default function FeedbackForm(){
             <div className="container-fluid">
             <FeedbackLeave/>
             
-            <Feedback change={handleChange}/>
+            <Feedback />
             <button onClick={handleClick} className="btn-load-less btn btn-primary m-3">Меньше... </button>
             <button onClick={handleClick} className="btn-load-more btn btn-primary m-3">Еще {left}...</button>
         </div>
