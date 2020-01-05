@@ -6,7 +6,8 @@ export default function FeedbackForm(){
     
     const [count, setCount] = useState(0);
     const [left, setLeft] = useState(0);
-    useEffect(() => {
+    
+    const handleChange=(e)=>{
         console.log('hello')
 
         let fe=document.querySelectorAll('.card.mb-4')
@@ -30,7 +31,7 @@ export default function FeedbackForm(){
             document.querySelector('.btn-load-less').style.display="none"
 
         }
-        if(counter==0 || counter+1>fe.length){
+        if(counter===0 || counter+1>fe.length){
             document.querySelector('.btn-load-more').style.display="none"
         }
         
@@ -45,7 +46,7 @@ export default function FeedbackForm(){
         
         setCount(counter)
         setLeft(fe.length-counter)
-    }, [])
+    }
     const handleClick=(e)=>{
         let fe=document.querySelectorAll('.card.mb-4')
         let counter=count
@@ -113,7 +114,7 @@ export default function FeedbackForm(){
             <div className="container-fluid">
             <FeedbackLeave/>
             
-            <Feedback/>
+            <Feedback change={handleChange}/>
             <button onClick={handleClick} className="btn-load-less btn btn-primary">load less </button>
         <button onClick={handleClick} className="btn-load-more btn btn-primary">load more {left}</button>
         </div>

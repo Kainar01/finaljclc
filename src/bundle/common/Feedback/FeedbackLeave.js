@@ -17,7 +17,7 @@ export default class FeedbackLeave extends React.Component{
                                     <p className="m-0">Оставьте отзывы</p>
                                 </div>
                             </div>
-                            <input type="text" id="website" className="website"></input>
+                           
                             <div className="card-body p-3">
 
                                 <div className="form-group">
@@ -38,9 +38,9 @@ export default class FeedbackLeave extends React.Component{
                                         <textarea className="form-control" placeholder="Ваш отзыв..." name="feedback" required></textarea>
                                     </div>
                                 </div>
-
+                                <input type="text" id="website" name="website"></input>
                                 <div className="text-center">
-                                    <input type="submit" value="Подтвердить" className="btn btn-info btn-block rounded-0 py-2"/>
+                                    <button type="submit"  className="btn btn-info btn-block rounded-0 py-2">Подтвердить</button>
                                 </div>
                             </div>
 
