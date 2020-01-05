@@ -38,6 +38,9 @@ export default function FeedbackForm(){
         if(counter+1>fe.length || count===fe.length){
             document.querySelector('.btn-load-more').style.display="none"
         }
+        else{
+            document.querySelector('.btn-load-more').style.display="block"
+        }
         console.log(counter,'counter')
         for(let i=0;i<fe.length;i++){
             if(i>=counter && !fe[i].classList.contains('hide')){
