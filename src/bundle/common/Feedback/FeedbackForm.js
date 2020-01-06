@@ -9,7 +9,6 @@ export default function FeedbackForm(){
     const [left, setLeft] = useState(0);
     const [mount,setMount] = useState(false)
     useEffect(() => {
-        console.log('hello')
 
         axios.get('https://jclc.kz/mysql.php')
                     .then(response => {

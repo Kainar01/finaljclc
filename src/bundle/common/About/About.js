@@ -19,6 +19,7 @@ class About extends React.Component  {
             formName='ch-form'
         }
         
+        
        
         let form = document.querySelector(`.${formName}`)
        
