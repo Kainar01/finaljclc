@@ -1,4 +1,9 @@
 import React from 'react'
+import ReactFlagsSelect from 'react-flags-select';
+ 
+//import css module
+import 'react-flags-select/css/react-flags-select.css';
+ 
 
 import PhoneInput from 'react-phone-input-2'
 import 'react-phone-input-2/lib/style.css'
@@ -9,8 +14,18 @@ class CallBack extends React.Component{
         this.handleSubmit = this.handleSubmit.bind(this)
         this.handleClick = this.handleClick.bind(this)
         this.handleChild = this.handleChild.bind(this)
+        this.onSelectFlag = this.onSelectFlag.bind(this)
     }
-    
+    onSelectFlag(e){
+        
+        const input = document.getElementsByName('country')
+        
+        
+        input[0].value= e
+        
+        document.querySelector('.selected--flag--option').click()
+        
+    }
     handleClick(e){
         // const form = document.querySelector('form')
         // var arr = [...form.children]
@@ -51,6 +66,7 @@ class CallBack extends React.Component{
     }
     handleChild(e){
         e.stopPropagation()
+        
         
     }
     handleSubmit(e){
@@ -102,6 +118,12 @@ class CallBack extends React.Component{
             </form>
             <form onClick={this.handleChild} onSubmit={this.handleSubmit}  method="POST" action="send.php" className="contact-form just-form hide">
                 <h5 className="text-center p-3 mb-2 mt-2 w-75 ml-auto mr-auto">Оставьте заявку на пробный урок!</h5>
+                <ReactFlagsSelect
+    countries={["JP","CN"]}
+    customLabels={{"JP": "Японский","CN": "Китайский"}} 
+    onSelect={this.onSelectFlag}
+    defaultCountry="JP"/>
+                <input type="text" value="" name="country" className="hide"></input>
                 <input type="text" name="myName" placeholder="Ваше имя..." className="form-control " required/>
                 
                 

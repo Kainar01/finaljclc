@@ -8,15 +8,12 @@ class Intro extends React.Component{
     }
     handleClick()
     {
-        if(window.innerHeight < 900 && window.innerWidth<500){
-            window.location.href = "https://wa.me/77013050188?text=Хочу%20записаться%20на%20пробный%20урок."
-        }
-        else{
+        
         let form = document.querySelector('.just-form')
        
         
         form.parentElement.classList.remove('hide')
-        form.classList.remove('hide')}
+        form.classList.remove('hide')
     }
     render(){
         return (
