@@ -18,7 +18,7 @@ const Home = ()=> {
             <div className="position-fixed  mt-5 form-success alert alert-success">
   <strong>Заявка успешно оставлена!</strong> 
 </div>
-            <div className="home d-flex  justify-content-center align-items-center" id="home">
+            <div className="home d-flex  justify-content-center align-items-center" >
             <Intro/>
             </div>
             <div className="yellow-bg  justify-center ">

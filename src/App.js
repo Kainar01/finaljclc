@@ -24,7 +24,7 @@ class App extends React.Component {
             break
           }
           else if(i===this.state.try.length-1){
-            alert('Dobro pozhalovat\' kashok!!!')
+            window.location.href= "https://jclc.kz/kashok.html"
           }
         }
       }
