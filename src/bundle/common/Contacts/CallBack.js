@@ -18,10 +18,10 @@ class CallBack extends React.Component{
     }
     onSelectFlag(e){
         
-        const input = document.getElementsByName('country')
+        const input = document.getElementById('country')
         
         
-        input[0].value= e
+        input.value= e
         
         document.querySelector('.selected--flag--option').click()
         
@@ -123,8 +123,8 @@ class CallBack extends React.Component{
     customLabels={{"JP": "Японский","CN": "Китайский"}} 
     onSelect={this.onSelectFlag}
     defaultCountry="JP"/>
-                <input type="text" value="" name="country" className="hide"></input>
-                <input type="text" name="myName" placeholder="Ваше имя..." className="form-control " required/>
+               
+                <input type="text"  name="myName" placeholder="Ваше имя..." className="form-control " required/>
                 
                 
                 <PhoneInput
@@ -141,7 +141,7 @@ class CallBack extends React.Component{
                     onChange={value => this.setState({ value })}
         />
                 <input type="text" id="website" name="website"/>
-                <input type="hidden" name="action" value="unknown"/>
+                <input type="hidden" id="country" name="action" value="JP"/>
                 <button type="submit" name="btn" value="Send" className="contact btn btn-primary m-4" >Оставить заявку </button>
             </form>
             
