@@ -2,7 +2,6 @@ import React from 'react'
 
 import Button from 'react-bootstrap/Button'
 import Card from 'react-bootstrap/Card'
-import {Link as Scroll} from 'react-scroll'
 class AboutCard extends React.Component{
     render(){
         return (
@@ -15,23 +14,12 @@ class AboutCard extends React.Component{
                     Курсы {' '} {this.props.learn} {' '}языка
                 </p>
                 <footer >
-                <Scroll activeClass="active"
-                to={this.props.bg}
-                spy={true}
-                smooth={true}
-                hashSpy={true}
-                offset={0}
-                duration={500}
-                delay={200}
-                isDynamic={true}
-                onSetActive={this.handleSetActive}
-                onSetInactive={this.handleSetInactive}
-                ignoreCancelEvents={false}
+                <a href={this.props.bg}
             >
                     <Button className="btn-action">
                         Подробнее
                     </Button>
-                    </Scroll>
+                    </a>
                 </footer>
             </Card>
    

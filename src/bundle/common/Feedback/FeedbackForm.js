@@ -1,5 +1,4 @@
 import React from 'react'
-import Feedback from './Feedback'
 import axios from 'axios'
 import FeedbackLeave from './FeedbackLeave';
 import {useEffect,useState} from 'react'
@@ -9,12 +8,16 @@ export default function FeedbackForm(){
     const [left, setLeft] = useState(0);
     const [mount,setMount] = useState(false)
     useEffect(() => {
-
+        if(!mount){
         axios.get('https://jclc.kz/mysql.php')
                     .then(response => {
                         var value = response.data;
                         setFeed(value)
-                        
+                        if(value){
+                            setMount(true)
+                        }
+
+
                     })
                     .catch(error => {
                         console.log(error);
@@ -23,7 +26,7 @@ export default function FeedbackForm(){
        
         
   
-        if(!mount){
+        
         
         let fe=document.querySelectorAll('.card.mb-4')
         if(fe.length>0){

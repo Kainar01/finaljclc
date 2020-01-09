@@ -1,7 +1,6 @@
 import React from 'react'
 import ReactFlagsSelect from 'react-flags-select';
  
-//import css module
 import 'react-flags-select/css/react-flags-select.css';
  
 
@@ -27,17 +26,7 @@ class CallBack extends React.Component{
         
     }
     handleClick(e){
-        // const form = document.querySelector('form')
-        // var arr = [...form.children]
-
-        // console.log(form.children,arr);
-        // console.log(arr.includes(e.target));
-        // if(e.target!==form && !arr.includes(e.target)){
-        //     if(!form.classList.contains('hide')){
-        //         form.classList.add('hide')
-        //     }
-        //     e.target.classList.add('hide')
-        // }
+        
         var body = document.getElementById('contact-container');
         var form = document.querySelectorAll('.contact-form')
         let except;
@@ -47,17 +36,12 @@ class CallBack extends React.Component{
             }
         })
 
-        // console.log(body,except);
         
    
        
         except.classList.add('hide')
         body.classList.add('hide')
-        // e.stopPropagation();
-        // except.addEventListener("click", function (ev) {
-           
-        //     ev.stopPropagation(); //this is important! If removed, you'll get both alerts
-        // }, false);
+        
         
         
         
@@ -70,13 +54,6 @@ class CallBack extends React.Component{
         
     }
     handleSubmit(e){
-        // if(!e.target.myName.value || !e.target.myTel.value ){
-        //     e.preventDefault()
-            
-        // }
-        // else{
-
-        // }
         
         const alert = document.querySelector('.form-success')
         alert.classList.add('form-show')

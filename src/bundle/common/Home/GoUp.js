@@ -20,29 +20,21 @@ class GoUp extends React.Component{
         })
         
     }
-   
+    handleClick(){
+        const home = document.getElementById('home')
+        home.scrollIntoView()
+    }
     UNSAFE_componentDidMount(){
         window.removeEventListener('scroll')
     }
     render(){
         return (
-            <Link activeClass="active"
-                to="home"
-                spy={true}
-                smooth={true}
-                hashSpy={true}
-                offset={0}
-                duration={500}
-                delay={200}
-                isDynamic={true}
-                onSetActive={this.handleSetActive}
-                onSetInactive={this.handleSetInactive}
-                ignoreCancelEvents={false}
+            <a onClick={this.handleClick}
             >
     <button type="submit"  className={"upp btn btn-primary "+(this.state.hidden?'hide':'')}>
     <i className="fas fa-arrow-up"></i>
     </button>
-</Link>
+</a>
             
         );
     }

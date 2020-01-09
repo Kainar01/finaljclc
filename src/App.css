@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth !important;
+}
+
 body {
   overflow-x: hidden;
 }
@@ -130,10 +134,12 @@ body {
 
 .jp-bg {
   background-image: url("./assets/jp-bg.jpg");
+  background-repeat: no-repeat !important;
 }
 
 .ch-bg {
   background-image: url("./assets/ch-bg.jpg");
+  background-repeat: no-repeat !important;
 }
 
 .jp-bg, .ch-bg {
@@ -362,7 +368,7 @@ body {
   height: 100vh;
   background-image: url("./assets/home-background.jpg");
   background-size: cover;
-  background-repeat: no repeat;
+  background-repeat: no-repeat;
   height: 100vh;
 }
 
