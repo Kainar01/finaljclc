@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7e0d46451fb2aa92fce04bb538669e9c",
+    "revision": "bd13943f6c6ad619871dab39c24ae9a3",
     "url": "/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/css/2.b4d37e6e.chunk.css"
   },
   {
-    "revision": "6950f5ef770d41240d96",
-    "url": "/static/css/main.9abf30f4.chunk.css"
+    "revision": "8cfec6cfe9fe7fcdbd9d",
+    "url": "/static/css/main.096f04c6.chunk.css"
   },
   {
     "revision": "ee6c84dfa81303a3fb57",
@@ -20,16 +20,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.1c36685d.chunk.js.LICENSE"
   },
   {
-    "revision": "6950f5ef770d41240d96",
-    "url": "/static/js/main.337d5475.chunk.js"
+    "revision": "8cfec6cfe9fe7fcdbd9d",
+    "url": "/static/js/main.c9749163.chunk.js"
   },
   {
     "revision": "16bf403f85a67a0fb936",
     "url": "/static/js/runtime-main.12a6431d.js"
   },
   {
-    "revision": "21c7f50a2813a2b8a759f140cba097cf",
-    "url": "/static/media/HSK-logo.21c7f50a.jpg"
+    "revision": "10790b65cd356cf33557dc50a4d4e940",
+    "url": "/static/media/HSK-logo.10790b65.jpg"
   },
   {
     "revision": "2f0263e0853b6f2c798368f73ac87cde",
@@ -444,20 +444,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/jo.8f719a67.svg"
   },
   {
-    "revision": "7774195e9998caaec4b5d4cada6dbfdb",
-    "url": "/static/media/jp-bg.7774195e.jpg"
+    "revision": "79c452019fce37842266840cdd0cc78b",
+    "url": "/static/media/jp-bg.79c45201.jpg"
   },
   {
-    "revision": "20724bdbf3c2ce8adb3b0b42a54ea5bb",
-    "url": "/static/media/jp-ch1.20724bdb.jpg"
+    "revision": "1be093b6dcf3dbc06e1c3ccc4f216300",
+    "url": "/static/media/jp-ch1.1be093b6.jpg"
   },
   {
     "revision": "4187b1d40dd02e84f908f0b2c9d24236",
     "url": "/static/media/jp.4187b1d4.svg"
   },
   {
-    "revision": "bc246fd7ba56f9c0d1616ee592b5df81",
-    "url": "/static/media/kanji1.bc246fd7.jpg"
+    "revision": "52424017f84f9f7f928204d2298d99c8",
+    "url": "/static/media/kanji1.52424017.jpg"
   },
   {
     "revision": "732c2b397511b291abeb188dec746a38",
@@ -840,8 +840,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/td.97c1759b.svg"
   },
   {
-    "revision": "f4a76d61ef1bf015ca07eb5feebbeaff",
-    "url": "/static/media/tea.f4a76d61.jpg"
+    "revision": "37a3e9be01f00356168dd26b5b54ea50",
+    "url": "/static/media/tea.37a3e9be.jpg"
   },
   {
     "revision": "e0f4483533c48a7c0ede0109b5fbda5d",

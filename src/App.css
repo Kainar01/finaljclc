@@ -408,6 +408,7 @@ body {
       -ms-flex: 1;
           flex: 1;
   text-decoration: none;
+  cursor: pointer !important;
 }
 
 .nav .nav-ul {

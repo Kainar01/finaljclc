@@ -6,7 +6,7 @@ class Contacts extends React.Component{
     
     render(){
         return (
-            <footer className="page-footer center-on-small-only text-center " id="contacts">
+            <footer className="contacts page-footer center-on-small-only text-center " id="contacts">
 		<div className="container-fluid">
 			<div className="row">
 				<div className="col-lg-4 col-md-6 ml-auto">

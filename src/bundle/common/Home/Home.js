@@ -3,22 +3,16 @@ import Intro from './Intro'
 import About from '../About/About.js'
 import GoUp from './GoUp.js'
 import Contacts from '../Contacts/Contacts.js'
-// import Feedback from '../Feedback/Feedback.js'
 import FeedbackForm from '../Feedback/FeedbackForm'
-import CallBack from '../Contacts/CallBack'
-// import {
-//     BrowserRouter as Router,
-//     Switch,
-//     Route,
-//     Link
-//   } from "react-router-dom";
+
+
 const Home = ()=> {
     return (
         <div >
             <div className="position-fixed  mt-5 form-success alert alert-success">
   <strong>Заявка успешно оставлена!</strong> 
 </div>
-            <div id="home" name="home" className="home d-flex  justify-content-center align-items-center" >
+            <div id="home"  className="home d-flex  justify-content-center align-items-center" >
             <Intro/>
             </div>
             <div className="yellow-bg  justify-center ">

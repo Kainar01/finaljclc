@@ -18,6 +18,7 @@ class NavBar extends React.Component  {
     }
     handleClick(){
         document.getElementById('home').scrollIntoView()
+        
     }
     handleLink(e){
         const nav = document.querySelector('.nav-ul')
