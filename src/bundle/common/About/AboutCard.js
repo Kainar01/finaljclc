@@ -3,6 +3,15 @@ import React from 'react'
 import Button from 'react-bootstrap/Button'
 import Card from 'react-bootstrap/Card'
 class AboutCard extends React.Component{
+    constructor(props){
+        super(props)
+        this.handleClick = this.handleClick.bind(this)
+    }
+    handleClick(){
+        const el= document.querySelector('.'+this.props.bg+'-section')
+        el.scrollIntoView()
+        
+    }
     render(){
         return (
             
@@ -14,9 +23,8 @@ class AboutCard extends React.Component{
                     Курсы {' '} {this.props.learn} {' '}языка
                 </p>
                 <footer >
-                <a href={this.props.bg}
-            >
-                    <Button className="btn-action">
+                <a>
+                    <Button onClick={this.handleClick} className="btn-action">
                         Подробнее
                     </Button>
                     </a>

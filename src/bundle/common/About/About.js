@@ -41,7 +41,7 @@ class About extends React.Component  {
             </CardDeck>
             </div>
             </div>
-            <div className='jp' id="jp">
+            <div className='jp jp-section' id="jp">
                 <div className="jp-container">
                     <h4 className="mb-4 mt-4">
                         Зачем учить японский?
@@ -58,7 +58,7 @@ class About extends React.Component  {
                 <button onClick={this.handleClick} className="jp-btn btn btn-primary m-3">Записаться на японский</button></div>
             <JpSlider />
             </div>
-            <div className='jp' id = "ch">
+            <div className='jp ch-section' id = "ch">
                 <div className="jp-container">
                     <h4 className="mb-4 mt-4">
                         Китайский нужно знать!

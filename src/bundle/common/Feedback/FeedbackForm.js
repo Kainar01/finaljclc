@@ -9,7 +9,7 @@ export default function FeedbackForm(){
     const [mount,setMount] = useState(false)
     useEffect(() => {
         if(!mount){
-        axios.get('https://jclc.kz/mysql.php')
+        axios.get('https://jclc.kz/php/mysql.php')
                     .then(response => {
                         var value = response.data;
                         setFeed(value)
