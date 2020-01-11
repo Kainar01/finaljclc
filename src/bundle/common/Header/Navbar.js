@@ -51,7 +51,7 @@ class NavBar extends React.Component  {
             el.scrollIntoView();
             
         }
-        for(let i=0; i<5; i++){
+        for(let i=0; i<6; i++){
             links[i].classList.toggle('opacity')
             links[i].classList.toggle('nav-translate')
 
@@ -103,7 +103,7 @@ class NavBar extends React.Component  {
         
         if( !this.state.linkVisible){
             setTimeout(function(){
-            for (let i = 0; i < 5; i++) {
+            for (let i = 0; i < 6; i++) {
                 (function (i) {
                     setTimeout(function () {
                         links[i].classList.toggle('opacity')
@@ -141,7 +141,7 @@ class NavBar extends React.Component  {
             
     }
     else{
-        for(let i=0; i<5; i++){
+        for(let i=0; i<6; i++){
             links[i].classList.toggle('opacity')
             links[i].classList.toggle('nav-translate')
         }
@@ -208,7 +208,7 @@ class NavBar extends React.Component  {
                         <i className="las la-times cross hide"></i>
                         </button>
                         <ul className="nav-ul">
-                        <a name="home"
+                        <a 
                         >
                             <span onClick={this.handleLink} className="btn nav-link home-link"> Главная</span>
                     </a>
@@ -226,7 +226,9 @@ class NavBar extends React.Component  {
                     <a >
                             <span onClick={this.handleLink} className="btn nav-link job"> Вакансии</span>
                     </a>
-                            
+                    <a href="/faq.html">
+                            <span onClick={this.handleLink} className="btn nav-link"> FAQ</span>
+                    </a>   
                         </ul>
                     
                     </nav>
